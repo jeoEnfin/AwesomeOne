@@ -4,7 +4,7 @@
 
 import {AppRegistry} from 'react-native';
 import App from './App';
-import Splash from './Screens/Splash';
+import User from './Screens/Users';
 import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => Splash);
+AppRegistry.registerComponent(appName, () => User);

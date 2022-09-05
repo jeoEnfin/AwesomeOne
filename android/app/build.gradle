@@ -2,6 +2,7 @@ apply plugin: "com.android.application"
 
 import com.android.build.OutputFile
 
+
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
  * and bundleReleaseJsAndAssets).
@@ -263,7 +264,16 @@ dependencies {
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
+    
+    implementation 'com.facebook.fresco:animated-gif:2.0.0'
+  
+    implementation 'com.facebook.fresco:animated-webp:2.0.0'
+  
+    implementation 'com.facebook.fresco:webpsupport:2.0.0' 
+
     implementation project(':lottie-react-native')
+
+   
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
