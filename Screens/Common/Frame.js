@@ -15,12 +15,15 @@ const Frame = ({ children, rightComponent = null}) => {
         <TouchableOpacity  style={Style.back}>
          <Image style={Style.ImageView} source={require("../../Assets/Buttons/BackArrow.png")}/>
         </TouchableOpacity>
-        <View>{rightComponent}</View>
+        <View style={Style.Component}>
+        <View style={Style.RightComponent}>{rightComponent}</View>
         <View>
         <TouchableOpacity  style={Style.List}>
         <Image style={Style.ImageView} source={require("../../Assets/Buttons/ListIcon.png")}/>
         </TouchableOpacity>
         </View>
+        </View>
+        
       </View>
       <View style={Style.children}>{children}</View>
       
@@ -71,7 +74,18 @@ const Style = StyleSheet.create({
     height: '100%',
     width: '100%',
     position: 'absolute',
+},
+Component: {
+  flexDirection: 'row',
+  justifyContent: 'space-between',
+  alignItems: 'stretch'
+},
+RightComponent: {
+  marginRight: 20,
+  marginTop: 4
 }
+  
+
  
 });
 
