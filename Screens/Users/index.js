@@ -3,16 +3,21 @@ import {View,StyleSheet,Image,TouchableOpacity,FlatList} from "react-native";
 import Frame from "../Common/Frame";
 import Profile from "./Profile";
 import Summary from "./Summary";
+import LeaderBoard from "./LeaderBoard";
 
 const User =()=>{
 
     const items = [
         <Profile />,
-        <Summary />
+        <Summary />,
+        <LeaderBoard />,
+       
     ];
 
     return(
-        <Frame
+       <Frame
+        title={'Sample user'}
+        subTitle={'Male'}
          rightComponent={
           <TouchableOpacity>
            <Image style={Style.ImageView} source={require("../../Assets/Buttons/AddUserIcon.png")}/>
