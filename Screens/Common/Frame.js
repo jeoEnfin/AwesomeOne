@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {ScrollViewComponent, StyleSheet} from 'react-native';
 import {View, TouchableOpacity, Text, KeyboardAvoidingView,Image} from 'react-native';
 
 
@@ -11,6 +11,7 @@ const Frame = ({ children, rightComponent = null}) => {
       behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
       style={{flex: 1, position: 'relative', backgroundColor: 'white'}}>
       <Image style={Style.BgView} source={require("../../Assets/Animations/Background/Background.gif")}/>
+      
       <View style={Style.frame}>
         <TouchableOpacity  style={Style.back}>
          <Image style={Style.ImageView} source={require("../../Assets/Buttons/BackArrow.png")}/>
@@ -25,8 +26,8 @@ const Frame = ({ children, rightComponent = null}) => {
         </View>
         
       </View>
-      <View style={Style.children}>{children}</View>
       
+      <View style={Style.children}>{children}</View>
     </KeyboardAvoidingView>
   );
 };
@@ -61,7 +62,6 @@ const Style = StyleSheet.create({
     fontWeight: 'bold',
   },
   children: {
-    flex: 1,
     paddingHorizontal: 15,
     paddingBottom: 0,
     position: 'relative',
