@@ -41,7 +41,6 @@ const Style = StyleSheet.create({
   profileView: {
     width: 140,
     height: 140,
-    
   },
   textView: {
     fontSize: 15,

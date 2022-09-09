@@ -10,7 +10,7 @@ const User =()=>{
     const items = [
         <Profile />,
         <Summary />,
-        <LeaderBoard />,
+        // <LeaderBoard />,
        
     ];
 

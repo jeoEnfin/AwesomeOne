@@ -45,7 +45,7 @@ const Style = StyleSheet.create({
     alignItems: "stretch",
     flexDirection: 'row',
     padding: 25,
-    marginTop: 10
+    marginTop: 10,
   },
   back: {
     borderRadius: 45 / 2,
@@ -74,7 +74,7 @@ const Style = StyleSheet.create({
   },
   imageView: {
     height: 25,
-    width: 25
+    width: 17.5
   },
   BgView: {
     height: '100%',
