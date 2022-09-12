@@ -8,7 +8,7 @@ import LevelButton from "../Common/Button/LevelButton";
 const Profile =()=>{
   return(
     <View style ={Style.mainContainer}>
-      <View style={{alignItems: 'center'}}>
+      <View style={{alignItems: 'center',}}>
       <View style = {{flexDirection: 'row',alignItems: 'center',justifyContent:'center'}}>
         <Text style={Style.points}>47</Text>
         <Text style={Style.textView}>positivity points</Text>
@@ -18,7 +18,7 @@ const Profile =()=>{
     <View style={Style.container}>
      <RoundButton buttonId={'Followers'}/>
      <View>
-     <Avatar style={Style.profileView} url={require("../../Assets/avatars/default_(1).png")}/>
+     <Avatar style={Style.profileView} url={require("../../Assets/avatars/default_(16).png")}/>
      </View>
      <RoundButton buttonId={'Following'}/>
     </View>
@@ -36,7 +36,7 @@ const Style = StyleSheet.create({
     flexDirection: "row",
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 50,
+    paddingHorizontal: 40,
   },
   profileView: {
     width: 140,

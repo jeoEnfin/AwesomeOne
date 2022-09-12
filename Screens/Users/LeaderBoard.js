@@ -1,33 +1,22 @@
 import React from "react";
-import {View,Text,Image,StyleSheet,TouchableOpacity} from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity,ImageBackground } from 'react-native';
 
+import LeaderBoardSheet from "../Common/LeaderBoardSheet";
 
-
-const LeaderBoard =()=>{
-    return(
-      <View style={Style.container}>
-        <TouchableOpacity>
-        <View style={Style.animationContainer}>
-    <Image style={Style.animation} resizeMode='contain' source={require("../../Assets/leaderboard.png")}/>
-       <View style={Style.animation}></View>
-      </View>
-        </TouchableOpacity>
-      </View>
-    );
+const LeaderBoard = () => {
+  return (
+    <View style={Style.container}>
+     <LeaderBoardSheet />
+    </View>
+  );
 }
 export default LeaderBoard;
 
 const Style = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginTop: 20
-    },
-    animation: {
-        position: 'relative'    
-    },
-    animationContainer: {
-      
-    }
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 20
+  },
 })

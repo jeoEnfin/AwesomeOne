@@ -4,14 +4,15 @@ import Frame from "../Common/Frame";
 import Profile from "./Profile";
 import Summary from "./Summary";
 import LeaderBoard from "./LeaderBoard";
+import Posts from "./Posts";
 
 const User =()=>{
 
     const items = [
         <Profile />,
         <Summary />,
-        // <LeaderBoard />,
-       
+        <LeaderBoard />,
+        <Posts />,
     ];
 
     return(

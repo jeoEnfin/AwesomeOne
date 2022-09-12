@@ -2,17 +2,13 @@
 import React from 'react';
 import { ScrollViewComponent, StyleSheet } from 'react-native';
 import { View, TouchableOpacity, Text, KeyboardAvoidingView, Image ,ScrollView} from 'react-native';
+import Background from './Background';
 
-
-const Frame = ({ children, rightComponent = null,title = null,subTitle = null}) => {
+const Frame = ({ children, rightComponent = null,title = null,subTitle = null,listIconPress}) => {
 
   return (
-    <KeyboardAvoidingView
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-      style={{ flex: 1, position: 'relative', backgroundColor: 'white' }}>
-        
-      <Image style={Style.BgView} source={require("../../Assets/Animations/Background/Background.gif")} />
-
+    <Background>
+    <ScrollView showsVerticalScrollIndicator={false}> 
       <View style={Style.frame}>
         <TouchableOpacity style={Style.back}>
           <Image style={Style.imageView} source={require("../../Assets/Buttons/BackArrow.png")} />
@@ -24,17 +20,20 @@ const Frame = ({ children, rightComponent = null,title = null,subTitle = null}) 
         <View style={Style.component}>
           <View style={Style.rightComponent}>{rightComponent}</View>
           <View>
-            <TouchableOpacity style={Style.List}>
-              <Image style={Style.ImageView} source={require("../../Assets/Buttons/ListIcon.png")} />
+            <TouchableOpacity style={Style.List} onPress={listIconPress}>
+              <Image style={Style.imageView2} source={require("../../Assets/Buttons/ListIcon.png")} />
             </TouchableOpacity>
           </View>
         </View>
 
       </View>
-
+      
       <View style={Style.children}>{children}</View>
+      
      
-    </KeyboardAvoidingView>
+      
+    </ScrollView>
+    </Background>
   );
 };
 
@@ -44,7 +43,7 @@ const Style = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: "stretch",
     flexDirection: 'row',
-    padding: 25,
+    padding: 15,
     marginTop: 10,
   },
   back: {
@@ -76,10 +75,9 @@ const Style = StyleSheet.create({
     height: 25,
     width: 17.5
   },
-  BgView: {
-    height: '100%',
-    width: '100%',
-    position: 'absolute',
+  imageView2: {
+    height: 25,
+    width: 25
   },
   component: {
     flexDirection: 'row',
