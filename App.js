@@ -7,6 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import User from './Screens/Users';
 
+
 function HomeScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -24,7 +25,6 @@ function App() {
       <Stack.Navigator screenOptions={{headerShown:false}}>
       <Stack.Screen name="User" component={User} />
       <Stack.Screen name="Home" component={HomeScreen} />
-       
       </Stack.Navigator>
     </NavigationContainer>
   );

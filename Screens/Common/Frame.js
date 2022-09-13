@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ScrollViewComponent, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { View, TouchableOpacity, Text, KeyboardAvoidingView, Image ,ScrollView} from 'react-native';
 import Background from './Background';
 
@@ -43,22 +43,21 @@ const Style = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: "stretch",
     flexDirection: 'row',
-    padding: 15,
-    marginTop: 10,
+    marginTop: 20,
   },
   back: {
-    borderRadius: 45 / 2,
-    width: 35,
-    height: 35,
+    width: 25,
+    height: 25,
     justifyContent: 'center',
     alignItems: 'center',
+    marginLeft: 15
   },
   List: {
-    borderRadius: 45 / 2,
-    width: 35,
-    height: 35,
+    width: 25,
+    height: 25,
     justifyContent: 'center',
     alignItems: 'center',
+    marginRight: 15
   },
   title: {
     textAlign: 'center',
@@ -72,12 +71,12 @@ const Style = StyleSheet.create({
     position: 'relative',
   },
   imageView: {
-    height: 25,
-    width: 17.5
+    height: 18.5,
+    width: 13.5
   },
   imageView2: {
-    height: 25,
-    width: 25
+    height: 19,
+    width: 19
   },
   component: {
     flexDirection: 'row',
@@ -86,10 +85,11 @@ const Style = StyleSheet.create({
   },
   rightComponent: {
     marginRight: 20,
-    marginTop: 4
+    height: 25,
+    width: 25
   },
   userNameView: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: '600',
     color: '#fff'
   },
@@ -99,7 +99,7 @@ const Style = StyleSheet.create({
     marginTop: 5
   },
   userView: {
-   alignContent: 'center',
+   marginTop: -10,
    alignItems: 'center',
    marginLeft: 40
   }

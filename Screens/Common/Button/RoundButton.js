@@ -23,15 +23,15 @@ const Style = StyleSheet.create({
         alignContent: 'center'
     },
     buttonContainer: {
-        height: 40,
-        width: 40,
+        height: 35,
+        width: 35,
         borderRadius: 50,
         alignItems: 'center',
         justifyContent: 'center',
 
     },
     textView: {
-        fontSize: 20,
+        fontSize: 18,
         color: '#fff',
         fontWeight: 'bold'
     },

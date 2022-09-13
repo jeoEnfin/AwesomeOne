@@ -20,7 +20,7 @@ const Style = StyleSheet.create({
         position: 'absolute',
     },
     children: {
-        paddingHorizontal: 15,
+        paddingHorizontal: 5,
         paddingBottom: 0,
         position: 'relative',
       },

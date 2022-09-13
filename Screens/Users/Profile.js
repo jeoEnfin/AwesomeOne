@@ -30,13 +30,13 @@ export default Profile ;
 const Style = StyleSheet.create({
   mainContainer:{
     flex: 1,
-    marginTop: 20
+    marginTop: 40
   },
   container: {
     flexDirection: "row",
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 40,
+    paddingHorizontal: 22,
   },
   profileView: {
     width: 140,

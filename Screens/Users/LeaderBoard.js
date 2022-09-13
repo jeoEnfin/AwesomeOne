@@ -6,7 +6,7 @@ import LeaderBoardSheet from "../Common/LeaderBoardSheet";
 const LeaderBoard = () => {
   return (
     <View style={Style.container}>
-     <LeaderBoardSheet />
+     <LeaderBoardSheet  />
     </View>
   );
 }
@@ -15,8 +15,8 @@ export default LeaderBoard;
 const Style = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 20
+    
+    
+    marginTop: 20,
   },
 })

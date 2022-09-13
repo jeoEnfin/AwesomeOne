@@ -38,7 +38,6 @@ const Style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 30,
-
     },
     animationContainer: {
         alignItems: 'center',
@@ -51,10 +50,10 @@ const Style = StyleSheet.create({
         width: 56,
     },
     imageView: {
-        height: 185.8,
-        width: 200.3,
+        height: 165.8,
+        width: 179.3,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     imageText: {
         alignItems: 'center',
@@ -79,6 +78,8 @@ const Style = StyleSheet.create({
         color: '#10C7FF',
         marginRight: 5,
         fontSize: 15,
+        shadowColor: '#000',
+        shadowOpacity: 0.25,
     },
     subHeadNumberView: {
         fontSize: 11,
