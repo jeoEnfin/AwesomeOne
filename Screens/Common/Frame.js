@@ -4,13 +4,13 @@ import { StyleSheet } from 'react-native';
 import { View, TouchableOpacity, Text, KeyboardAvoidingView, Image ,ScrollView} from 'react-native';
 import Background from './Background';
 
-const Frame = ({ children, rightComponent = null,title = null,subTitle = null,listIconPress}) => {
+const Frame = ({ children, rightComponent = null,title = null,subTitle = null,listIconPress,backPress}) => {
 
   return (
     <Background>
     <ScrollView showsVerticalScrollIndicator={false}> 
       <View style={Style.frame}>
-        <TouchableOpacity style={Style.back}>
+        <TouchableOpacity style={Style.back} onPress={backPress}>
           <Image style={Style.imageView} source={require("../../Assets/Buttons/BackArrow.png")} />
         </TouchableOpacity>
         <View style={Style.userView}>
@@ -89,7 +89,7 @@ const Style = StyleSheet.create({
     width: 25
   },
   userNameView: {
-    fontSize: 18,
+    fontSize: 18  ,
     fontWeight: '600',
     color: '#fff'
   },

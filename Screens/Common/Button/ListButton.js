@@ -1,13 +1,13 @@
-import { StyleSheet, Text, View,TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View,TouchableOpacity,ImageBackground } from 'react-native'
 import React from 'react'
 
 const ListButton = ({listButtonPress,title}) => {
   return (
     <View style={styles.container} >
-      <TouchableOpacity onPress={listButtonPress} style={styles.buttonView}>
-        <View >
+      <TouchableOpacity onPress={listButtonPress} >
+        <ImageBackground source={require('../../../Assets/CustomScreen/listButtonBackground.png')} resizeMode="contain" style={styles.buttonView}>
         <Text style={styles.titleView}>{title}</Text>
-        </View>
+        </ImageBackground>
       </TouchableOpacity> 
     </View>
   )
@@ -23,14 +23,13 @@ const styles = StyleSheet.create({
     },
     buttonView: {
         height: 60,
-        width: 330,
-        backgroundColor: '#000',
+        width: 320,
+        marginHorizontal: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: 38,
-        opacity: 0.6 
+        borderRadius: 38, 
     },
     container: {
-        padding: 5
+        padding: 3
     }
 })

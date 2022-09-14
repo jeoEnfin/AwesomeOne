@@ -70,7 +70,7 @@ const User = () => {
 
                             </View>
                             <View>
-                                <Image source={require('../../Assets/Buttons/Group 5.png')} />
+                                <Image source={require('../../Assets/Buttons/Group 5.png')} resizeMode='contain' />
                             </View>
                         </View>
                     </View>

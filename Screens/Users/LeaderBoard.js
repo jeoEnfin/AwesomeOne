@@ -15,8 +15,6 @@ export default LeaderBoard;
 const Style = StyleSheet.create({
   container: {
     flex: 1,
-    
-    
     marginTop: 20,
   },
 })
